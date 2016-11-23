@@ -3,11 +3,75 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+    height: 100%;
+}
 
+.content {
+    display: block;
+    margin-top: 2em;
+    color: ghostwhite;
+}
 
+.leftskew {
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
 
+.rightskew {
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
 
+article {
+    margin: 0px;
+    margin-bottom: -1em;
+    margin-top: -1em;
+    overflow: hidden;
+    height: 100%;
+}
 
+.info {
+    background-color: #003b60;
+    z-index: 1;
+}
+
+.countdown {
+    background-color: #000;
+    z-index: 1;
+}
+
+.program {
+    background-color: #e9d15f;
+    z-index: 2;
+}
+
+.mad {
+    background-color: #508749;
+    z-index: 2;
+}
+
+.partnere {
+    background-color: lightblue;
+    z-index: 3;
+}
+
+.talent {
+    background-color: #ef661c;
+    z-index: 3;
+}
+
+.box {
+    padding: 4em;
+    height: 100%;
+    position: relative;
+}
+
+.box-header {
+    asd
+}
+
+.box-paragraph
 
 
 
