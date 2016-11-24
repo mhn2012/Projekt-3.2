@@ -5,6 +5,7 @@
    ========================================================================== */
 html {
     height: 100%;
+    display: block;
 }
 
 .content {
@@ -16,59 +17,66 @@ html {
 .leftskew {
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
 }
 
 .rightskew {
     -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    position: absolute;
 }
 
 article {
-    margin: 0px;
-    margin-bottom: -1em;
-    margin-top: -1em;
-    overflow: hidden;
     height: 100%;
 }
 
 .info {
     background-color: #003b60;
-    z-index: 1;
+    z-index: 3;
 }
 
 .countdown {
     background-color: #000;
-    z-index: 1;
+    z-index: 3;
 }
 
 .program {
     background-color: #e9d15f;
     z-index: 2;
+    margin-top: 225px;
 }
 
 .mad {
     background-color: #508749;
     z-index: 2;
+    margin-top: 225px;
 }
 
 .partnere {
     background-color: lightblue;
-    z-index: 3;
+    z-index: 1;
+    margin-top: 450px;
 }
 
 .talent {
     background-color: #ef661c;
-    z-index: 3;
+    z-index: 1;
+    margin-top: 450px;
 }
 
 .box {
     padding: 4em;
     height: 100%;
-    position: relative;
 }
 
 .box-header {
-    asd
+    font-weight: 700;
+    border-bottom: 4px solid white;
+    padding-bottom: 10px;
+}
+
+.box-header:after {
+    
 }
 
 .box-paragraph
