@@ -1,7 +1,7 @@
 
 
 /* ==========================================================================
-   Author's custom styles
+   Main
    ========================================================================== */
 html {
     height: 100%;
@@ -14,72 +14,160 @@ html {
     color: ghostwhite;
 }
 
-.leftskew {
-    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-    position: absolute;
+p,h1,h2,h3,h4.h5 {
+    color: ghostwhite;
 }
 
-.rightskew {
-    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+a {
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   Video
+   ========================================================================== */
+
+.main-video {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding-left: -15px;
+    padding-right: -15px;
+}
+
+/* ==========================================================================
+   Boxes
+   ========================================================================== */
+
+.box-row-1 {
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    position: absolute;
 }
 
-article {
-    height: 100%;
+.box-row-2 {
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
 
-.info {
-    background-color: #003b60;
-    z-index: 3;
-}
-
-.countdown {
-    background-color: #000;
-    z-index: 3;
-}
-
-.program {
-    background-color: #e9d15f;
-    z-index: 2;
-    margin-top: 225px;
-}
-
-.mad {
-    background-color: #508749;
-    z-index: 2;
-    margin-top: 225px;
-}
-
-.partnere {
-    background-color: lightblue;
-    z-index: 1;
-    margin-top: 450px;
-}
-
-.talent {
-    background-color: #ef661c;
-    z-index: 1;
-    margin-top: 450px;
+.box-row-3 {
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
 }
 
 .box {
     padding: 4em;
     height: 100%;
+    height: 360px;
+    overflow: hidden;
+    transition:all 0.5s ;
+        -webkit-transition:all 0.5s ;
+        -o-transition:all 0.5s ;
+        -moz-transition:all 0.5s ;
+}
+
+a:hover .box, a:focus .box {
+    cursor: pointer;
+    text-decoration: none;
+    background-position: center;
+    background-size: 120%;
 }
 
 .box-header {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 3em;
+    color: ghostwhite;
     font-weight: 700;
     border-bottom: 4px solid white;
     padding-bottom: 10px;
-}
-
-.box-header:after {
     
 }
 
-.box-paragraph
+.box-paragraph {
+    font-size: 1.33em;
+}
+
+.info {
+    background-color: #003b60;
+    z-index: 3;
+    background: 
+        linear-gradient(
+            rgba(0, 59, 96, 0.80),
+            rgba(0, 59, 96, 0.80)
+            ),
+            url(http://placehold.it/500);
+    background-position: center;
+    background-size: 100%;
+}
+
+.countdown {
+    background-color: #000;
+    z-index: 3;
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.80),
+            rgba(0, 0, 0, 0.80)
+            ),
+            url(http://placehold.it/500);
+    background-position: center;
+    background-size: 100%;
+}
+
+.program {
+    background-color: #e9d15f;
+    z-index: 2;
+    background: 
+        linear-gradient(
+            rgba(233, 209, 95, 0.80),
+            rgba(233, 209, 95, 0.80)
+            ),
+            url(http://placehold.it/500);
+    background-position: center;
+    background-size: 100%;
+}
+
+.mad {
+    background-color: #508749;
+    z-index: 2;
+    background: 
+        linear-gradient(
+            rgba(80, 135, 73, 0.80),
+            rgba(80, 135, 73, 0.80)
+            ),
+            url(http://placehold.it/500);
+    background-position: center;
+    background-size: 100%;
+}
+
+.partnere {
+    background-color: lightblue;
+    z-index: 1;
+    background: 
+        linear-gradient(
+            rgba(66, 180, 230, 0.80),
+            rgba(66, 180, 230, 0.80)
+            ),
+            url(http://placehold.it/500);
+    background-position: center;
+    background-size: 100%;
+}
+
+.talent {
+    background-color: #ef661c;
+    z-index: 1;
+    background: 
+        linear-gradient(
+            rgba(239, 102, 28, 0.80),
+            rgba(239, 102, 28, 0.80)
+            ),
+            url(../img/field.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+
 
 
 
