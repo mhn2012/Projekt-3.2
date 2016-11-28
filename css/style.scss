@@ -163,18 +163,7 @@ a:hover .box, a:focus .box {
     padding-top: 5em !important;
 }
 
-.countdown {
-    background-color: #000;
-    background: 
-        linear-gradient(
-            rgba(0, 0, 0, 0.80),
-            rgba(0, 0, 0, 0.80)
-            ),
-            url(http://placehold.it/1000x500);
-    background-position: center;
-    background-size: 100%;
-    padding-top: 7em !important;
-}
+
 
 .program {
     background-color: #e9d15f;
@@ -228,6 +217,45 @@ a:hover .box, a:focus .box {
     padding-top: 7em !important;
 }
 
+/* ======================================================
+   Countdown
+   ====================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+
+.countdown {
+    background-color: #1d1d1d;
+    padding-top: 7em !important;
+    align-items:center;
+    padding-left: 2em;
+}
+
+#clockdiv{
+    height: 100px;
+    width: 400px;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    font-size: 0px;
+}
+
+#clockdiv > div{
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+}
+
+#clockdiv div > span{
+    display: inline-block;
+    font-size: 50px;
+    font-family: 'Bungee', cursive;
+    text-align: left;
+}
+
+.smalltext{
+    font-size: 16px;
+}
 
 /* ======================================================
    Social Feed
