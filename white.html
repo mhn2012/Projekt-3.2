@@ -1,180 +1,42 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Aarhus Kickoff</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
-    <!-- Dependencies -->
+<html>
+	<head>
+		<!-- Dependencies -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/flipclock.css">
 
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
-    <script src="https://use.fontawesome.com/3e95a83342.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+		<script src="js/flipclock.min.js"></script>
+	</head>
+	<body>
+	<div class="clock" style="margin:2em;"></div>
+	<div class="message"></div>
 
-<body>
-    <main class="content col-lg-12">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
-            </ul>
-        </nav>
+	<script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+			var clock;
 
-        <!--<iframe class="main-video col-lg-12">
+			clock = $('.clock').FlipClock({
+		        clockFace: 'DailyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(220880);
+		    clock.setCountdown(true);
+		    clock.start();
 
-        </iframe>-->
-
-        <section class="box-row-1 row">
-            <a href="#">
-                <article class="info box col-lg-5">
-                    <h2 class="box-header">Info</h2>
-                    <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
-                </article>
-            </a>
-            <a href="#">
-                <article class="countdown box col-lg-7">
-                    <h2 class="box-header">Countdown</h2>
-                    <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
-                </article>
-            </a>
-        </section>
-
-        <section class="box-row-2 row">
-            <a href="#">
-                <article class="program box col-lg-7">
-                    <h2 class="box-header">Program</h2>
-                    <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
-                </article>
-            </a>
-            <a href="#">
-                <article class="mad box col-lg-5">
-                    <h2 class="box-header">Mad</h2>
-                    <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
-                </article>
-            </a>
-        </section>
-
-        <section class="box-row-3 row">
-            <a href="#">
-                <article class="partnere box col-lg-5">
-                    <h2 class="box-header">Partnere</h2>
-                    <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
-                </article>
-            </a>
-            <a href="#">
-                <article class="talent box col-lg-7">
-                    <h2 class="box-header">Talent</h2>
-                    <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
-                </article>
-            </a>
-        </section>
-
-        <section class="box-row-4 row">
-            <article class="social-box box col-lg-12">
-
-                <h2 class="box-header">Følg med</h2>
-
-                <div class="col-lg-10 col-lg-offset-1 row">
-                    <figure class="social-feed col-lg-3">
-                        <div class="social-pad">Lorem ipsum</div>
-                    </figure>
-                    <figure class="social-feed col-lg-3">
-                        <div class="social-pad">Lorem ipsum</div>
-                    </figure>
-                    <figure class="social-feed col-lg-3">
-                        <div class="social-pad">Lorem ipsum</div>
-                    </figure>
-                    <figure class="social-feed col-lg-3">
-                        <div class="social-pad">Lorem ipsum</div>
-                    </figure>
-                </div>
-
-                <div class="col-lg-10 col-lg-offset-1 row">
-                    <figure class="social-feed col-lg-3">
-                        <div class="social-pad">Lorem ipsum</div>
-                    </figure>
-                    <figure class="social-feed col-lg-3">
-                        <div class="social-pad">Lorem ipsum</div>
-                    </figure>
-                    <figure class="social-feed col-lg-3">
-                        <div class="social-pad">Lorem ipsum</div>
-                    </figure>
-                    <figure class="social-feed col-lg-3">
-                        <div class="social-pad">Lorem ipsum</div>
-                    </figure>
-                </div>
-
-            </article>
-        </section>
-
-        <footer class="box-row-5 row">
-            <article class="footer col-lg-12">
-               
-                <ul class="contact-footer col-lg-6">
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-home" aria-hidden="true"></i>
-                            Stadion Allé
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                            +45 89 38 60 00
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            kontakt@aarhuskickoff.dk
-                        </a>
-                    </li>
-                </ul>
-                
-                <ul class="social-buttons col-lg-6">
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-                
-            </article>
-        </footer>
-
-    </main>
-    <script src="js/scripts.js"></script>
-</body>
-
+		});
+	</script>
+	
+	</body>
 </html>

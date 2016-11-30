@@ -9,6 +9,7 @@
 
     <!-- Dependencies -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/flipclock.css">
 
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -26,116 +27,92 @@
 
 <body>
     <main class="content col-lg-12">
-        
         <!-- Navigation -->
-        <nav class="row navbar navbar-static-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        Menu <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
+    <nav class="navbar row navbar-custom navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">
                         <img src="img/logo_small_more_white.png">
                     </a>
-                </div>
-                
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                       
-                        <li>
-                            <a href="#">
-                                <div>Info</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>Countdown</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>Program</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>Mad</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>Partnere</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>Talent</div>
-                            </a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container -->
-        </nav>
-        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>Info</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>Countdown</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>Program</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>Mad</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>Partnere</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>Talent</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+           
             <div id="videowrapper">
             </div>
         
         <div class="wrapper">
             <section class="box-row-1 row">
                 <a href="#">
-                    <article class="info box col-lg-5">
+                    <article class="info box col-lg-5 col-md-5 col-xs-12">
                         <h2 class="box-header">Info</h2>
                         <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
                     </article>
                 </a>
                 <article>
-                    <article class="countdown box col-lg-7">
-                       <!--
+                    <article class="countdown box col-lg-7 col-md-7 col-xs-12">
                         <h2 class="box-header">Countdown</h2>
-                        <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
-                        -->
-                        <h2 class="box-header">Countdown</h2>
-                        <div id="clockdiv">
-                          <div>
-                            <span class="days"></span>
-                            <div class="smalltext">Dage</div>
-                          </div>
-                          <div>
-                            <span class="hours"></span>
-                            <div class="smalltext">Timer</div>
-                          </div>
-                          <div>
-                            <span class="minutes"></span>
-                            <div class="smalltext">Minutter</div>
-                          </div>
-                          <div>
-                            <span class="seconds"></span>
-                            <div class="smalltext">Sekunder</div>
-                          </div>
-                            <!--
-                        <div>
-                            <span class="hundreds"></span>
-                            <div class="smalltext">Milisekunder</div>
-                          </div>
-                        -->
-                        </div>
+                        <div class="clock" style="margin:2em;"></div>
+                        <div class="message"></div>
+                        
                     </article>
+                    
                 </article>
             </section>
 
             <section class="box-row-2 row">
                 <a href="#">
-                    <article class="program box col-lg-7">
+                    <article class="program box col-lg-7 col-md-7 col-xs-12">
                         <h2 class="box-header">Program</h2>
                         <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
                     </article>
                 </a>
                 <a href="#">
-                    <article class="mad box col-lg-5">
+                    <article class="mad box col-lg-5 col-md-5 col-xs-12">
                         <h2 class="box-header">Mad</h2>
                         <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
                     </article>
@@ -144,13 +121,13 @@
 
             <section class="box-row-3 row">
                 <a href="#">
-                    <article class="partnere box col-lg-5">
+                    <article class="partnere box col-lg-5 col-md-5 col-xs-12">
                         <h2 class="box-header">Partnere</h2>
                         <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
                     </article>
                 </a>
                 <a href="#">
-                    <article class="talent box col-lg-7">
+                    <article class="talent box col-lg-7 col-md-7 col-xs-12">
                         <h2 class="box-header">Talent</h2>
                         <p class="box-paragraph">Lorem ipsum dolor sit amet</p>
                     </article>
@@ -162,32 +139,32 @@
 
                     <h2 class="box-header">Media feed</h2>
 
-                    <div class="col-lg-10 col-lg-offset-1 row">
-                        <figure class="social-feed col-lg-3">
+                    <div class="col-lg-10 col-lg-offset-1 col-md-12 col-xs-12 row">
+                        <figure class="social-feed col-lg-3 col-md-6 col-xs-12">
                             <div class="social-pad">Lorem ipsum</div>
                         </figure>
-                        <figure class="social-feed col-lg-3">
+                        <figure class="social-feed col-lg-3 col-md-6 col-xs-12">
                             <div class="social-pad">Lorem ipsum</div>
                         </figure>
-                        <figure class="social-feed col-lg-3">
+                        <figure class="social-feed col-lg-3 col-md-6 col-xs-12">
                             <div class="social-pad">Lorem ipsum</div>
                         </figure>
-                        <figure class="social-feed col-lg-3">
+                        <figure class="social-feed col-lg-3 col-md-6 col-xs-12">
                             <div class="social-pad">Lorem ipsum</div>
                         </figure>
                     </div>
 
                     <div class="col-lg-10 col-lg-offset-1 row">
-                        <figure class="social-feed col-lg-3">
+                        <figure class="social-feed col-lg-3 col-md-6 col-xs-12">
                             <div class="social-pad">Lorem ipsum</div>
                         </figure>
-                        <figure class="social-feed col-lg-3">
+                        <figure class="social-feed col-lg-3 col-md-6 col-xs-12">
                             <div class="social-pad">Lorem ipsum</div>
                         </figure>
-                        <figure class="social-feed col-lg-3">
+                        <figure class="social-feed col-lg-3 col-md-6 col-xs-12">
                             <div class="social-pad">Lorem ipsum</div>
                         </figure>
-                        <figure class="social-feed col-lg-3">
+                        <figure class="social-feed col-lg-3 col-md-6 col-xs-12">
                             <div class="social-pad">Lorem ipsum</div>
                         </figure>
                     </div>
@@ -198,7 +175,7 @@
             <footer class="box-row-5 row">
                 <article class="footer col-lg-12">
 
-                    <ul class="contact-footer col-lg-6">
+                    <ul class="contact-footer col-lg-6 col-md-6 col-xs-8">
                         <li>
                             <a href="#">
                                 <i class="fa fa-home" aria-hidden="true"></i>
@@ -219,7 +196,7 @@
                         </li>
                     </ul>
 
-                    <ul class="social-buttons col-lg-6">
+                    <ul class="social-buttons col-lg-6 col-md-6 col-xs-4">
                         <li>
                             <a href="#">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -243,10 +220,38 @@
 
     </main>
     
-    <!-- Scripts -->
-    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <!-- Script Dependencies -->
+    <script src="js/vendor/jquery.js"></script>
     <script src="js/jquery.tubular.1.0.js"></script>
+    <script src="js/flipclock.js"></script>
+    
+    <!-- Custom Scripts -->
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+        var clock;
+
+        jQuery(document).ready(function() {
+            var clock;
+
+            clock = jQuery('.clock').FlipClock({
+                clockFace: 'DailyCounter',
+                autoStart: true,
+                countdown: true,
+                language: 'da-dk',
+                minimumDigits: 9,
+                callbacks: {
+                    stop: function() {
+                        jQuery('.message').html('The clock has stopped!')
+                    }
+                }
+            });
+
+            clock.setTime(22620880);
+            clock.setCountdown(true);
+            clock.start();
+
+        });
+    </script>
     
 </body>
 

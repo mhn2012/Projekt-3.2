@@ -15,10 +15,12 @@ $white: ghostwhite;
 .content {
     color: ghostwhite;
     background-color: #2d2d2d;
+    margin-bottom: -680px;
 }
 
 .wrapper{
     height: 100%;
+    margin-bottom: -680px;
 }
 
 p,h1,h2,h3,h4,h5 {
@@ -60,9 +62,15 @@ a:hover, a:focus {
 
 #videowrapper {
     height: 80vh;
-    position: fixed;
+    position: relative;
     z-index: 10;
     border: none;
+}
+
+@media screen and (max-width: 992px) {
+        #videowrapper {
+        height: 40vh;
+    }
 }
 
 /* ======================================================
@@ -72,7 +80,7 @@ a:hover, a:focus {
 
 .box-row-1 {
     -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-    clip-path: polyg on(0 0, 100% 10%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
     position: relative;
     height: 100%;
     z-index: 1;
@@ -100,18 +108,20 @@ a:hover, a:focus {
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     position: relative;
-    height: 100%;
+    height: 1024px;
     z-index: 4;
     top: -340px;
+    margin-bottom: -100px;
 }
 
 .box-row-5 {
     -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    position: relative;
-    height: 100%;
+    position: absolute;
+    height: 450px;
+    width: 100%;
     z-index: 5;
-    top: -420px;
+    bottom: 0px;
 }
 
 .box {
@@ -150,14 +160,39 @@ a:hover .box, a:focus .box {
     font-size: 1.33em;
 }
 
+@media screen and (max-width: 992px) {
+    .box-row-1, .box-row-2, .box-row-3 {
+        -webkit-clip-path: none;
+        clip-path: none;
+    }
+    
+    .info, .program, .partnere {
+        -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+        top: 100px;
+        }
+    
+    .countdown, .mad, .talent {
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        top: 50px;
+        }
+    
+    .box-header {
+        font-size: 7em;
+    }
+    
+    .box-paragraph {
+        font-size: 2.5em;
+    }
+}
+
+/* ======================================================
+   Individual boxes
+   ====================================================== */
+
 .info {
     background-color: #003b60;
-    background: 
-        linear-gradient(
-            rgba(0, 59, 96, 0.80),
-            rgba(0, 59, 96, 0.80)
-            ),
-            url(http://placehold.it/1000x500);
     background-position: center;
     background-size: 100%;
     padding-top: 5em !important;
@@ -172,7 +207,7 @@ a:hover .box, a:focus .box {
             rgba(233, 209, 95, 0.80),
             rgba(233, 209, 95, 0.80)
             ),
-            url(http://placehold.it/1000x500);
+            url(../img/field.jpg);
     background-position: center;
     background-size: 100%;
     padding-top: 7em !important;
@@ -198,7 +233,7 @@ a:hover .box, a:focus .box {
             rgba(66, 180, 230, 0.80),
             rgba(66, 180, 230, 0.80)
             ),
-            url(http://placehold.it/1000x500);
+            url(../img/pen_partner.jpg);
     background-position: center;
     background-size: 100%;
     padding-top: 5em !important;
@@ -221,14 +256,18 @@ a:hover .box, a:focus .box {
    Countdown
    ====================================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Bungee');
-
 .countdown {
     background-color: #1d1d1d;
-    padding-top: 7em !important;
+    padding-top: 5em !important;
     align-items:center;
-    padding-left: 2em;
+    padding-left: 5em;
 }
+
+.clock {
+    padding-top: 10px;
+}
+
+/*
 
 #clockdiv{
     height: 100px;
@@ -255,7 +294,7 @@ a:hover .box, a:focus .box {
 
 .smalltext{
     font-size: 16px;
-}
+}*/
 
 /* ======================================================
    Social Feed
@@ -263,7 +302,7 @@ a:hover .box, a:focus .box {
 
 .social-box {
     background-color: #003b60;
-    height: 960px;
+    height: 100%;
     padding-top: 7em !important;
 }
 
@@ -288,8 +327,10 @@ a:hover .box, a:focus .box {
 .footer {
     padding: 4em;
     background-color: #2d2d2d;
-    height: 360px;
     font-size: 1.5em;
+    height: 100%;
+    font-family: 'Bungee Inline', cursive;
+    font-weight: 700;
     
 }
 
@@ -297,6 +338,7 @@ a:hover .box, a:focus .box {
     text-align: center;
     font-size: 2em;
     min-width: 60px;
+    line-height: normal;
 }
 
 .footer a {
@@ -310,19 +352,23 @@ a:hover .box, a:focus .box {
     color: #6d6d6d;
 }
 
+.contact-footer {
+    top: 120px;
+}
+
 .contact-footer li{
     position: relative;
-    display: block;
     list-style: none;
-    bottom: 10px;
+    height: 2em;
 }
 
 .social-buttons {
-    top: 100px;
+    height: 2em;
+    position: relative;
+    top: 200px;
 }
 
 .social-buttons li{
-    bottom: 10px;
     position: relative;
     float: right;
     list-style: none;
