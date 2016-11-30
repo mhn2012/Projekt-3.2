@@ -13,7 +13,7 @@ $white: ghostwhite;
 }
 
 .content {
-    color: ghostwhite;
+    color: $white;
     background-color: #2d2d2d;
     margin-bottom: -680px;
 }
@@ -29,7 +29,7 @@ p,h1,h2,h3,h4,h5 {
 }
 
 a {
-    color: ghostwhite;
+    color: $white;
     text-decoration: none;
 }
 
@@ -43,10 +43,12 @@ a:hover, a:focus {
 
 .navbar {
     height: 100%;
-    background-color: rgba(0.55, 0.55, 0.55, 0.66);
-    font-family: Universal;
-    font-size: 1em;
+    /*background-color: rgba(0.55, 0.55, 0.55, 0.66);*/
+    background-color: #000;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1.2em;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .navbar-brand {
@@ -146,17 +148,19 @@ a:hover .box, a:focus .box {
 .box-header {
     /*font-family: 'Bungee Inline', cursive;*/
     text-align: left;
-    font-family: Universal;
+    font-family: 'Cabin Sketch', cursive;
     font-size: 4em;
-    color: ghostwhite;
-    font-weight: 400;
+    color: $white;
+    font-weight: 700;
     border-bottom: 4px solid white;
     padding-bottom: 10px;
     width: 400px;
+    text-transform: uppercase;
     
 }
 
 .box-paragraph {
+    font-family: 'Cabin Sketch', cursive;
     font-size: 1.33em;
 }
 
@@ -258,21 +262,15 @@ a:hover .box, a:focus .box {
 
 .countdown {
     background-color: #1d1d1d;
-    padding-top: 5em !important;
-    align-items:center;
-    padding-left: 5em;
+    padding-top: 7em !important;
+    align-items: center;
+    padding-left: 2em;
+    font-family: 'Cabin Sketch', cursive;
 }
-
-.clock {
-    padding-top: 10px;
-}
-
-/*
 
 #clockdiv{
     height: 100px;
     width: 400px;
-    font-family: sans-serif;
     color: #fff;
     font-weight: 100;
     text-align: center;
@@ -288,13 +286,13 @@ a:hover .box, a:focus .box {
 #clockdiv div > span{
     display: inline-block;
     font-size: 50px;
-    font-family: 'Bungee', cursive;
     text-align: left;
+    font-weight: 700;
 }
 
 .smalltext{
     font-size: 16px;
-}*/
+}
 
 /* ======================================================
    Social Feed
@@ -329,7 +327,7 @@ a:hover .box, a:focus .box {
     background-color: #2d2d2d;
     font-size: 1.5em;
     height: 100%;
-    font-family: 'Bungee Inline', cursive;
+    font-family: 'Cabin Sketch', cursive;
     font-weight: 700;
     
 }
@@ -342,7 +340,7 @@ a:hover .box, a:focus .box {
 }
 
 .footer a {
-    color: ghostwhite;
+    color: $white;
     transition:all 0.2s ;
         -webkit-transition:all 0.2s ;
         -o-transition:all 0.2s ;
