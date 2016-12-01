@@ -24,7 +24,7 @@ $navyblue: #013f4c;
     margin-bottom: -680px;
 }
 
-.wrapper{
+.content-wrapper{
     height: 100%;
     margin-bottom: -680px;
 }
@@ -71,7 +71,7 @@ a:hover, a:focus {
 #videowrapper {
     height: 80vh;
     position: relative;
-    z-index: 10;
+    z-index: 0;
     border: none;
 }
 
@@ -79,6 +79,17 @@ a:hover, a:focus {
         #videowrapper {
         height: 40vh;
     }
+}
+
+video { 
+    position: absolute;
+    width: 100%;
+    top: -70px;
+    left: 0px;
+    bottom: 0;
+    right: 0px;
+    overflow: hidden;
+    z-index: -1;
 }
 
 /* ======================================================

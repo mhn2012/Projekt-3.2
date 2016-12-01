@@ -1,12 +1,4 @@
-var jQuery = jQuery.noConflict(); 
-jQuery(document).ready(function() {
-    console.log( "ready!" );
-    
-    jQuery('#videowrapper').tubular({videoId: 'ua18_AEf77Q'});
-    playButtonClass: 'tubular-play';
-    
-});
-
+//Countdown
 
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.now();
