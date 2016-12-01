@@ -200,7 +200,7 @@ a:hover .box, a:focus .box {
 }
 
 @media screen and (max-width: 992px) {
-    .box-row-1, .box-row-2, .box-row-3 {
+    .box-row-1, .box-row-2, .box-row-3, .box-row-4, .box-row-5 {
         -webkit-clip-path: none;
         clip-path: none;
     }
@@ -216,6 +216,16 @@ a:hover .box, a:focus .box {
         clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
         top: 50px;
         }
+    
+    .box-row-4 {
+        -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    }
+    
+    .box-row-5 {
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    }
     
     .box-header {
         font-size: 3em;

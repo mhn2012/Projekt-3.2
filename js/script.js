@@ -46,3 +46,14 @@ function initializeClock(id, endtime) {
 
 var deadline = new Date("2017-08-18T18:00:00");
 initializeClock('clockdiv', deadline);
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
