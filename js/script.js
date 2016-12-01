@@ -3,6 +3,7 @@ jQuery(document).ready(function() {
     console.log( "ready!" );
     
     jQuery('#videowrapper').tubular({videoId: 'ua18_AEf77Q'});
+    playButtonClass: 'tubular-play';
     
 });
 

@@ -2,6 +2,12 @@
    Variables
    ====================================================== */
 $white: ghostwhite;
+$blue: #003b60;
+$orange: #ef661c;
+$green: #508749;
+$yellow: #e9d15f;
+$navyblue: #013f4c;
+
 
 /* ======================================================
    Main
@@ -152,14 +158,32 @@ a:hover .box, a:focus .box {
     font-size: 4em;
     color: $white;
     font-weight: 700;
-    border-bottom: 4px solid white;
+    //border-bottom: 4px solid white;
     padding-bottom: 10px;
-    width: 400px;
-    text-transform: uppercase;
-    
+    //width: 400px;
+    text-transform: uppercase;    
+}
+
+.skillelinjeA {
+    max-width: 350px;
+    min-width: 150px;
+    height: 2px;
+    background: #fff;
+    text-align: left;
+    margin: -10px auto auto 0;
+}
+
+.skillelinjeB {
+    max-width: 500px;
+    min-width: 150px;
+    height: 2px;
+    background: #fff;
+    text-align: left;
+    margin: -10px auto auto 0;
 }
 
 .box-paragraph {
+    padding-top: 10px;
     font-family: 'Cabin Sketch', cursive;
     font-size: 1.33em;
 }
@@ -183,11 +207,11 @@ a:hover .box, a:focus .box {
         }
     
     .box-header {
-        font-size: 7em;
+        font-size: 3em;
     }
     
     .box-paragraph {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 }
 
@@ -265,15 +289,15 @@ a:hover .box, a:focus .box {
     padding-top: 7em !important;
     align-items: center;
     padding-left: 2em;
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Bungee', cursive;
 }
 
 #clockdiv{
     height: 100px;
-    width: 400px;
+    width: 100%;
     color: #fff;
     font-weight: 100;
-    text-align: center;
+    text-align: left;
     font-size: 0px;
 }
 
@@ -281,6 +305,7 @@ a:hover .box, a:focus .box {
     display: inline-block;
     margin: 10px 10px 10px 10px;
     padding: 0;
+    text-align: center;
 }
 
 #clockdiv div > span{
@@ -292,6 +317,7 @@ a:hover .box, a:focus .box {
 
 .smalltext{
     font-size: 16px;
+    text-align: center;
 }
 
 /* ======================================================
