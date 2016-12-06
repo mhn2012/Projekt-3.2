@@ -71,3 +71,15 @@ $(function() {
     });
 		
 		});
+
+// A $( document ).ready() block.
+$( document ).ready(function() {
+
+$('#myModal').bind('hidden.bs.modal', function () {
+  $("html").css("margin-right", "0px");
+});
+$('#myModal').bind('show.bs.modal', function () {
+  $("html").css("margin-right", "-15px");
+});
+    
+    });
