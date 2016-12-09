@@ -140,7 +140,7 @@ video {
     position: relative;
     height: 100%;
     z-index: 4;
-    top: -340px;
+    top: -380px;
     margin-bottom: -100px;
 }
 
@@ -475,7 +475,7 @@ a:hover .box, a:focus .box {
     border: none !important;
 }
 
-.j-poster h3, .j-message p, .juicer-feed a {
+.j-poster h3, .j-message p, .juicer-feed a, .juicer-feed .j-meta a {
     color: $white ;
 }
 
