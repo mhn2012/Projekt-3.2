@@ -1,0 +1,160 @@
+
+
+	$(function() {
+		    $('.navbar-collapse ul li a').click(function(){ 
+            $('.navbar-toggle:visible').click();
+    });
+		
+		});
+        
+        
+        
+        
+        
+        
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
+
+
+<table class="table-responsive timeline">
+                                        <tbody>
+                                            <tr>
+                                                <td class="location">Ceres Arena</td>
+                                                <td class="arena"> 
+                                                    <h3>15:00 - 17:00</h3>
+                                                    <p>
+                                                        Meet'n'greet med Bakken Bears
+                                                    </p>
+                                                </td>
+                                                <td class="arena"> 
+                                                    <h3>18:30 - 20:30</h3>
+                                                    <p>
+                                                        Bakken Bears vs. Hong Kong Basketball Club
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="location">Scenen</td>
+                                                <td class="scenen"> 
+                                                    <h3>12:00 - 12:15</h3>
+                                                    <p>
+                                                        Der bydes velkommen til Kickoff 2017 af Jacob Bundsgaard
+                                                    </p>
+                                                </td>
+                                                <td class="scenen">
+                                                    <h3>17:00 - 17:30</h3>
+                                                    <p>
+                                                        The Burger Shack Challenge!<br>
+                                                        - Hvem kan spise flest burgere på 15 minutter?
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="location">Kickoffpladsen</td>
+                                                <td class="pladsen">
+                                                    <h3>12:15 - 14:30</h3>
+                                                    <p>
+                                                        Mål mål mål! Runde 1.<br>
+                                                        Kom og prøv dine evner af som målscorer.
+                                                    </p>
+                                                </td>
+                                                <td class="pladsen">
+                                                    <h3>14:45 - 15:00</h3>
+                                                    <p>
+                                                        Mål mål mål! Runde 1.<br>
+                                                        Kom og prøv dine evner af som målscorer.
+                                                    </p>
+                                                </td>
+                                                <td class="pladsen">
+                                                    <h3>15:00 - 17:30</h3>
+                                                    <p>
+                                                        Mål mål mål! Runde 1.<br>
+                                                        Kom og prøv dine evner af som målscorer.
+                                                    </p>
+                                                </td>
+                                                <td class="pladsen">
+                                                    <h3>17:45 - 18:45</h3>
+                                                    <p>
+                                                        Mål mål mål! Runde 1.<br>
+                                                        Kom og prøv dine evner af som målscorer.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    
+/* ======================================================
+   Timetable
+   ====================================================== */
+.timeline {
+    table-layout: fixed;
+}
+
+th,
+td.location {
+    border-right: 1px solid white;
+}
+
+td {
+    border-top: none !important;
+    &.location {
+        border-top: 1px transparent !important;
+    }
+    &.arena {
+        background: $darkred;
+        text-align: right;
+        margin-bottom: 50px;
+    }
+    &.scenen {
+        background: $green;
+        text-align: right;
+        margin-bottom: 50px;
+    }
+    &.pladsen {
+        background: $navyblue;
+        text-align: right;
+    }
+}
+
+th,
+td {
+    background-color: transparent;
+    &.location {
+        width: 200px;
+        font-size: 2em;
+        font-family: "Cabin Sketch", cursive;
+        color: #f8f8ff;
+        font-weight: 700;
+    }
+}
+
+.timeline h3 {
+    font-size: 1.6em;
+    font-family: "Cabin Sketch", cursive;
+    font-weight: 700;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 1em;
+}
+
+.timeline p {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+}

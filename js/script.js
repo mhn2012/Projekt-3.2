@@ -48,29 +48,26 @@ var deadline = new Date("2017-08-18T18:00:00");
 initializeClock('clockdiv', deadline);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+	$(function () {
+	    $('.navbar-collapse ul li a').click(function () {
+	        $('.navbar-toggle:visible').click();
+	    });
+	});
 
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-
-
-	$(function() {
-		    $('.navbar-collapse ul li a').click(function(){ 
-            $('.navbar-toggle:visible').click();
-    });
-		
-		});
+	$(function () {
+	    $('.page-scroll[href*="#"]:not([href="#"])').click(function () {
+	        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+	            var target = $(this.hash);
+	            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	            if (target.length) {
+	                $('html, body').animate({
+	                    scrollTop: target.offset().top
+	                }, 1000);
+	                return false;
+	            }
+	        }
+	    });
+	});
 
 // A $( document ).ready() block.
 $( document ).ready(function() {

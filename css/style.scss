@@ -6,7 +6,8 @@ $blue: #003b60;
 $orange: #ef661c;
 $green: #508749;
 $yellow: #e9d15f;
-$navyblue: #013f4c;
+$navyblue: #003b60;
+$darkred: #5e0101;
 
 
 /* ======================================================
@@ -20,7 +21,7 @@ $navyblue: #013f4c;
 
 .content {
     color: $white;
-    background-color: #2d2d2d;
+    background-color: $navyblue;
     margin-bottom: -680px;
 }
 
@@ -48,9 +49,9 @@ a:hover, a:focus {
    ====================================================== */
 
 .navbar {
-    background-color: #000;
-    background: rgba(0.55, 0.55, 0.55, 0.80);
-    font-family: 'Open Sans';
+    background-color: $darkred;
+    background: rgba(94, 1, 1, 0.80);
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     font-weight: 400;
     text-transform: uppercase;
@@ -70,7 +71,7 @@ a:hover, a:focus {
 }
 
 .nav li a:hover, .nav li a:focus {
-    background-color: #4d4d4d;
+    background-color: #000;
     color: white;
 }
 
@@ -139,17 +140,15 @@ video {
     position: relative;
     height: 100%;
     z-index: 4;
-    top: -340px;
+    top: -380px;
     margin-bottom: -100px;
 }
 
-.box-row-5 {
-    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+footer {
     position: absolute;
     width: 100%;
     height: 100%;
-    max-height: 260px;
+    max-height: 170px;
     z-index: 5;
     bottom: 0px;
 }
@@ -169,8 +168,6 @@ video {
 a:hover .box, a:focus .box {
     cursor: pointer;
     text-decoration: none;
-    background-position: center;
-    background-size: 120%;
 }
 
 .box-header {
@@ -211,7 +208,7 @@ a:hover .box, a:focus .box {
 }
 
 @media screen and (max-width: 992px) {
-    .box-row-1, .box-row-2, .box-row-3, .box-row-4, .box-row-5 {
+    .box-row-1, .box-row-2, .box-row-3, .box-row-4 {
         -webkit-clip-path: none;
         clip-path: none;
     }
@@ -231,11 +228,6 @@ a:hover .box, a:focus .box {
     .box-row-4 {
         -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 100%);
         clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    }
-    
-    .box-row-5 {
-        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     }
     
     .box-header {
@@ -260,7 +252,7 @@ a:hover .box, a:focus .box {
             ),
             url(../img/family_thumb.jpg);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     padding-top: 5em !important;
 }
 
@@ -275,7 +267,7 @@ a:hover .box, a:focus .box {
             rgba(239, 102, 28, 0.80),
             rgba(239, 102, 28, 0.80)
             ),
-            url(../img/field.jpg);
+            url(../img/kids_sport.jpg);
     background-position: center;
     background-size: 100%;
     padding-top: 7em !important;
@@ -383,9 +375,8 @@ a:hover .box, a:focus .box {
 
 .social-box {
     position: relative;
-    background-color: #003b60;
+    background-color: $navyblue;
     height: 100%;
-    min-height: 1400px;
     padding-top: 7em !important;
 }
 
@@ -400,12 +391,14 @@ a:hover .box, a:focus .box {
    ====================================================== */
 
 .footer {
-    background-color: #2d2d2d;
-    font-family: 'Cabin Sketch', cursive;
+    background-color: $darkred;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     position: absolute;
     bottom: 0px;
-    padding: 5em;
+    padding-right: 14em;
+    padding-left: 14em;
+    padding-bottom: 4em;
 }
 
 .footer i {
@@ -418,7 +411,7 @@ a:hover .box, a:focus .box {
 }
 
 .footer a {
-    font-size: 2em;
+    font-size: 1.2em;
     color: $white;
     transition:all 0.2s ;
         -webkit-transition:all 0.2s ;
@@ -431,6 +424,7 @@ a:hover .box, a:focus .box {
 
 .contact-footer {
     max-height: 10em;
+    margin-top: 4em;
 }
 
 .contact-footer li{
@@ -441,7 +435,7 @@ a:hover .box, a:focus .box {
 .social-buttons {
     max-height: 10em;
     text-align: right;
-    bottom: -5.5em;
+    margin-top: 7em;
 }
 
 .social-buttons li{
@@ -471,14 +465,52 @@ a:hover .box, a:focus .box {
     overflow:hidden;
 }
 
+.facebook {
+    background: $orange !important;
+    border: none !important;
+}
+
+.instagram {
+    background: $green !important;
+    border: none !important;
+}
+
+.j-poster h3, .j-message p, .juicer-feed a, .juicer-feed .j-meta a {
+    color: $white ;
+}
+
+.juicer-feed .j-meta a {
+    color:  $white;
+}
+
+.j-poster .j-date {
+    color: $white ;
+}
+
+.j-post-overlay.juicer-feed .j-navigate a.j-previous, .j-post-overlay.juicer-feed .j-navigate a.j-next {
+    color: $white;
+}
+
+.j-overlay .j-overlay-content {
+    background-color: $navyblue ;
+}
+
+.j-post-overlay.juicer-feed a.juicer-button {
+    color: $white;
+}
+
+.j-share {
+    display: none;
+}
+
 /* ======================================================
    Modal
    ====================================================== */
 
 
 .modal{
-    top: 100px;
     overflow: hidden !important;
+    top: 15px;
 }
 
 body.modal-open {
@@ -554,8 +586,8 @@ body.modal-open {
 .close{
     position: absolute;
     opacity: 1;
-    left: 105%;
-    top: -5%;
+    left: 90%;
+    top: -100px;
 }
 
 .closeicon{
@@ -582,15 +614,27 @@ body.modal-open {
     height: 100vh;
 }
 
+#programModalBackground::before {
+    background-color: $orange;
+    -webkit-mask-image: url("../img/modal_top.svg");
+    mask-image: url("../img/modal_top.svg");
+    background: url(../img/modal_top.svg);
+}
+
 #programModalBackground{
-    background: url("../img/modal_orange-04.svg");
-    background-repeat: no-repeat;
+    background-color: $orange;
     border: none;
     box-sizing: border-box;
     padding: 20px;
     outline:none;
     box-shadow:none;
-    height: 100vh;  
+    height: 100%;  
+}
+
+#programModalBackground::after {
+    background-color: $orange;
+    -webkit-mask-image: url("../img/modal_bottom.svg");
+    mask-image: url("../img/modal_bottom.svg");
 }
 
 #madModalBackground {
@@ -624,6 +668,11 @@ body.modal-open {
     outline: none;
     box-shadow: none;
 }
+
+/* ======================================================
+   Timetable
+   ====================================================== */
+
 
 /* ======================================================
    Footer icons
@@ -702,73 +751,49 @@ content: url("../img/insta_white.svg") !important;
             -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
         }
 
-        .box-row-5{
-            margin-top: -102%;
-            position: absolute;
-            width: 100% !important;
-        }
-
         .footer{
             width: 100%;
             text-align: center;
-            font-size: 0.7em;
             padding: 0em;
+            height: 200px;
         }
 
+        .contact-footer {
+            text-align: left;
+            padding-top: 3em;
+        }
+        
         .social-buttons {
-            text-align: center;
+            text-align: right;
             bottom: 0px;
         }
         
-        .social-buttons li {
-            width: 33%;
+        .social-buttons li{
+            width: 100%;
         }
-
-        html, body{
-        overflow-x: hidden !important;
-        }
-
-
     }
 
    /* SAMSUNG PHONES ETC */ 
 @media only screen and (min-width : 360px) and (max-width : 374px){
-.box-row-4{
-    height: 1850px;
-}
-
-.box-row-5{
-    height: 350px;
-}
+        .box-row-4{
+            height: 1850px;
+        }
 
 }
 
     /* IPHONE 6 */ 
  @media only screen and (min-width : 375px) and (max-width : 766px){
 
-.box-row-4{
-margin-bottom: -40px;
-    height: 1850px;
-    top: -330px;
-}
-
-.box-row-5{
-    height: 350px;
-}
-
-
-
+        .box-row-4{
+        margin-bottom: -40px;
+            height: 1850px;
+            top: -330px;
     }
-
+}
     /* Small Devices, Tablets */
     @media only screen and (min-width : 767px) and (max-width : 768px) {
 .box-row-4{
       height: 1000px;
-}
-
-.box-row-5{
-height: 280px;
-    margin-top: -40%;
 }
 
 #clockdiv>div{
@@ -780,9 +805,9 @@ height: 280px;
 
   /*IPAD LANDSCAPE MODE */
     @media only screen and (min-width : 1024px) and (max-width : 1025px) {
-#videowrapper{
-display: none;
-}
+        #videowrapper{
+        display: none;
+        }
 
     }
 
@@ -796,16 +821,3 @@ display: none;
     @media only screen and (min-width : 1200px) {
 
     }
-
-
-
-
-
-/*# sourceMappingURL=style.css.map */
-
-
-
-
-
-
-
