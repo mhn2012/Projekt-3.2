@@ -49,8 +49,8 @@ a:hover, a:focus {
    ====================================================== */
 
 .navbar {
-    background-color: $darkred;
-    background: rgba(94, 1, 1, 0.80);
+    background-color: #2d2d2d;
+    background: rgba(55, 55, 55, 0.80);
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     font-weight: 400;
@@ -391,7 +391,7 @@ a:hover .box, a:focus .box {
    ====================================================== */
 
 .footer {
-    background-color: $darkred;
+    background-color: #2d2d2d;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     position: absolute;
@@ -540,12 +540,13 @@ body.modal-open {
     text-align: justify;
 }
 
-#programModal{
-      width: 100%;
+#programModal {
+    width: 100%;
     height: 100%;
 }
 
 #infoModal{
+    top: 10%;
     width: 100%;
     height: 100%;
     margin: -30px;
@@ -611,30 +612,20 @@ body.modal-open {
     padding: 20px;
     outline: none;
     box-shadow: none;
-    height: 100vh;
-}
-
-#programModalBackground::before {
-    background-color: $orange;
-    -webkit-mask-image: url("../img/modal_top.svg");
-    mask-image: url("../img/modal_top.svg");
-    background: url(../img/modal_top.svg);
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
 }
 
 #programModalBackground{
-    background-color: $orange;
+    background: url("../img/modal_orange-04.svg");
+    background-repeat: no-repeat;
     border: none;
     box-sizing: border-box;
     padding: 20px;
     outline:none;
     box-shadow:none;
     height: 100%;  
-}
-
-#programModalBackground::after {
-    background-color: $orange;
-    -webkit-mask-image: url("../img/modal_bottom.svg");
-    mask-image: url("../img/modal_bottom.svg");
 }
 
 #madModalBackground {
@@ -770,6 +761,20 @@ content: url("../img/insta_white.svg") !important;
         
         .social-buttons li{
             width: 100%;
+        }
+        
+        #infoModal {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            overflow: visible;
+        }
+        
+        #infoModalBackground {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            overflow: visible;
         }
     }
 
