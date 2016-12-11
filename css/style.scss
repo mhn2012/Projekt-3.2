@@ -501,6 +501,7 @@ body.modal-open {
 #programModal {
     width: 100%;
     height: 100%;
+    top: 10%;
 }
 
 #infoModal{
@@ -623,6 +624,112 @@ body.modal-open {
    Timetable
    ====================================================== */
 
+#home {
+    background: url(../img/modal_green-05.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    min-height: 300px;
+}
+
+#profile {
+    background: url(../img/modal_red-08.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    min-height: 300px;
+}
+
+#messages {
+    background: url(../img/modal_blue-06.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    min-height: 420px;
+}
+
+#arena {
+    background-color: #508749 !important;
+    z-index: 99;
+}
+
+#scenen {
+    background-color: #D35540 !important;
+    z-index: 99;
+}
+
+#kickoffpladsen {
+    background-color: #003b60 !important;
+    z-index: 99;
+}
+
+.box-header-tabs {
+    font-size: 1.2em !important;
+}
+
+.program-time {
+    padding-left: 2em;
+}
+
+.program-text {
+    font-size: 1em !important;
+    padding-left: 2em;
+}
+
+.glyphicon-chevron-left {
+    content: url("../img/modal_pil-10.svg") !important;
+    width: 1em;
+    transform: rotate(180deg);
+    color: white;
+    opacity: 1 !important;
+}
+
+.glyphicon-chevron-right {
+    content: url("../img/modal_pil-10.svg") !important;
+    width: 1em;
+    color: white;
+    opacity: 1 !important;
+}
+
+.carousel-control {
+    opacity: 1 !important;
+}
+
+.box-header-tabs {
+    float: left !important;
+}
+
+.program-time {
+    text-align: left;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1.5em;
+    color: #f8f8ff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.carousel-header {
+    font-size: 2em;
+    font-family: "Cabin Sketch", cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f8f8ff;
+    text-align: center;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
 
 /* ======================================================
    Footer icons
@@ -755,6 +862,237 @@ content: url("../img/insta_white.svg") !important;
             height: 1.5em;
             margin-right: 0px;
         }
+/* ======================================================
+    Timetable - Mobile
+====================================================== */
+        
+        #home {
+            background: url(../img/modal_green-05.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            min-height: 300px;
+        }
+        
+        #profile {
+            background: url(../img/modal_red-08.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            min-height: 300px;
+        }
+        
+        #messages {
+            background: url(../img/modal_blue-06.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            min-height: 420px;
+        }
+        
+        #arena {
+            background-color: #508749 !important;
+            z-index: 99;
+        }
+        
+        #scenen {
+            background-color: #D35540 !important;
+            z-index: 99;
+        }
+        
+        #kickoffpladsen {
+            background-color: #003b60 !important;
+            z-index: 99;
+        }
+        
+        .box-header-tabs {
+            font-size: 1.2em !important;
+            padding: 0px;
+        }
+        
+        .program-time {
+            padding-left: 1em;
+        }
+        
+        .program-text {
+            font-size: 1em !important;
+            padding-left: 1em;
+        }
+        
+        .glyphicon-chevron-left {
+            content: url("../img/modal_pil-10.svg") !important;
+            width: 1em;
+            transform: rotate(180deg);
+            color: white;
+            opacity: 1 !important;
+        }
+        
+        .glyphicon-chevron-right {
+            content: url("../img/modal_pil-10.svg") !important;
+            width: 1em;
+            color: white;
+            opacity: 1 !important;
+        }
+        
+        .carousel-control {
+            opacity: 1 !important;
+        }
+        
+        .box-header-tabs {
+            float: left !important;
+        }
+        
+        .program-time {
+            text-align: left;
+            font-family: 'Cabin Sketch', cursive;
+            font-size: 1.5em;
+            color: #f8f8ff;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .carousel-header {
+            font-size: 2em;
+            font-family: "Cabin Sketch", cursive;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #f8f8ff;
+            text-align: center;
+        }
+        
+        .carousel-control.left {
+            background-image: none;
+        }
+        
+        .carousel-control.right {
+            background-image: none;
+        }
+        
+    /*Program Schedule*/
+        
+        /*#home {
+            background: url(../img/modal_green-05.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: -11%;
+            margin-left: 6%;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        #profile {
+            background: url(../img/modal_red-08.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: -12%;
+            margin-left: 5%;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        #messages {
+            background: url(../img/modal_blue-06.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: -14%;
+            margin-left: 6%;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        #arena {
+            background-color: #508749 !important;
+            width: 23vw;
+            z-index: 99;
+        }
+        
+        #scenen {
+            background-color: #D35540 !important;
+            z-index: 99;
+            width: 23vw;
+        }
+        
+        #kickoffpladsen {
+            width: 20vw;
+            background-color: #003b60 !important;
+            z-index: 99;
+        }
+        
+        .box-header-tabs {
+            font-size: 0.8em !important;
+        }
+        
+        .program-text {
+            font-size: 0.8em !important;
+        }
+        
+        .glyphicon-chevron-left {
+            content: url("../img/modal_pil-10.svg") !important;
+            width: 1em;
+            transform: rotate(180deg);
+            color: white;
+            opacity: 1 !important;
+        }
+        
+        .glyphicon-chevron-right {
+            content: url("../img/modal_pil-10.svg") !important;
+            width: 1em;
+            color: white;
+            opacity: 1 !important;
+        }
+        
+        .carousel-control {
+            opacity: 1 !important;
+        }
+        
+        carousel-control .glyphicon-chevron-left,
+        .carousel-control .icon-prev {
+            left: -100% !important;
+        }
+        
+        .carousel-control .glyphicon-chevron-right,
+        .carousel-control .icon-prev {
+            right: -100% !important;
+        }
+        
+        .box-header-tabs {
+            float: left !important;
+        }
+        
+        .program-time {
+            text-align: left;
+            font-family: 'Cabin Sketch', cursive;
+            font-size: 1.5em;
+            color: #f8f8ff;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .carousel-header {
+            font-size: 1.5em;
+            font-family: "Cabin Sketch", cursive;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #f8f8ff;
+            text-align: center;
+        }
+        
+        .carousel-control.left {
+            background-image: none;
+        }
+        
+        .carousel-control.right {
+            background-image: none;
+        }*/
     }
 
    /* SAMSUNG PHONES ETC */ 
@@ -810,113 +1148,3 @@ content: url("../img/insta_white.svg") !important;
 
 
 
-/*MANGLER BREAKPOINTS OG ER KUN TIL iPHONE 4*/
-
-    #home {
-        background: url(../img/modal_green-05.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: -11%;
-        margin-left: 6%;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-    }
-    #profile {
-        background: url(../img/modal_red-08.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: -12%;
-        margin-left: 5%;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-    }
-    #messages {
-        background: url(../img/modal_blue-06.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: -14%;
-        margin-left: 6%;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-    }
-    #arena {
-        background-color: #508749 !important;
-        width: 23vw;
-        z-index: 99;
-    }
-    #scenen {
-        background-color: #D35540 !important;
-        z-index: 99;
-        width: 23vw;
-    }
-    #kickoffpladsen {
-        width: 20vw;
-        background-color: #003b60 !important;
-        z-index: 99;
-    }
-    .box-header-tabs {
-        font-size: 0.8em !important;
-    }
-    .program-text {
-        font-size: 0.8em !important;
-    }
-    
-    .glyphicon-chevron-left {
-    content: url("../img/modal_pil-10.svg") !important;
-    width: 1em;
-    transform: rotate(180deg);
-    color: white;
-    opacity: 1 !important;
-}
-
-.glyphicon-chevron-right {
-    content: url("../img/modal_pil-10.svg") !important;
-    width: 1em;
-    color: white;
-    opacity: 1 !important;
-}
-
-.carousel-control {
-    opacity: 1 !important;
-}
-    
-    carousel-control .glyphicon-chevron-left,
-    .carousel-control .icon-prev {
-        left: -100% !important;
-    }
-    .carousel-control .glyphicon-chevron-right,
-    .carousel-control .icon-prev {
-        right: -100% !important;
-    }
-    
-    .box-header-tabs {
-        float: left !important;
-    }
-    .program-time {
-        text-align: left;
-        font-family: 'Cabin Sketch', cursive;
-        font-size: 1.5em;
-        color: #f8f8ff;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-.carousel-header {
-    font-size: 1.5em;
-    font-family: "Cabin Sketch", cursive;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #f8f8ff;
-    text-align: center;
-}
-
-.carousel-control.left {
-    background-image: none;
-}
-
-.carousel-control.right {
-    background-image: none;
-}
